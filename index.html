@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>國考圓夢家 - 胖哆啦/佑安老師</title>
+    <!-- 引入 Google Fonts 提升人文質感 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600;900&family=Noto+Sans+TC:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --wood-dark: #4E342E;
+            --wood-medium: #8D6E63;
+            --warm-paper: #FDFBF7;
+            --accent-soft: #D4A373;
+            --line-green: #06C755;
+            --ig-gradient: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #EFEBE9;
+            font-family: 'Noto Sans TC', sans-serif;
+            color: var(--wood-dark);
+        }
+
+        .container {
+            max-width: 480px;
+            margin: 0 auto;
+            background: var(--warm-paper);
+            min-height: 100vh;
+            box-shadow: 0 0 30px rgba(0,0,0,0.1);
+        }
+
+        /* 頂部看板區 */
+        .header-visual {
+            height: 280px;
+            background: linear-gradient(rgba(78, 52, 46, 0.4), rgba(78, 52, 46, 0.4)), 
+                        url('https://images.unsplash.com/photo-1491843384428-252a239400d9?auto=format&fit=crop&q=80&w=800');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header-visual h2 { font-family: 'Noto Serif TC', serif; font-size: 1.2rem; font-weight: 600; margin-bottom: 10px; letter-spacing: 2px; }
+        .header-visual h1 { font-family: 'Noto Serif TC', serif; font-size: 2.2rem; font-weight: 900; margin: 0; }
+
+        /* 核心文案區 */
+        .story-section {
+            padding: 40px 30px;
+            line-height: 1.8;
+            text-align: center;
+        }
+
+        .quote-main {
+            font-family: 'Noto Serif TC', serif;
+            font-size: 1.4rem;
+            color: var(--wood-medium);
+            margin-bottom: 25px;
+            display: block;
+            border-bottom: 1px solid #D7CCC8;
+            padding-bottom: 15px;
+        }
+
+        .story-text {
+            font-weight: 300;
+            font-size: 1.05rem;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .highlight-name {
+            font-weight: 500;
+            color: var(--wood-dark);
+            border-left: 4px solid var(--accent-soft);
+            padding-left: 10px;
+            margin: 20px 0;
+            text-align: left;
+        }
+
+        /* 標籤 */
+        .tag-row {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        .tag-row span {
+            font-size: 0.85rem;
+            color: var(--wood-medium);
+        }
+
+        /* 按鈕清單 */
+        .link-list {
+            padding: 0 25px 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 18px;
+            border-radius: 50px;
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.15); }
+        .btn i { margin-right: 12px; font-size: 1.2rem; }
+
+        .btn-line { background-color: var(--line-green); }
+        .btn-success { background-color: #546E7A; }
+        .btn-ig { background: var(--ig-gradient); }
+        .btn-threads { background-color: #000; }
+
+        /* 據點卡片 */
+        .footer-info {
+            background: #F5F1EE;
+            padding: 30px;
+            border-top: 1px solid #E0E0E0;
+            font-size: 0.95rem;
+        }
+
+        .footer-info h3 { margin-top: 0; color: var(--wood-dark); font-size: 1.1rem; }
+        .info-detail { margin: 8px 0; display: flex; align-items: flex-start; }
+        .info-detail i { width: 25px; margin-top: 5px; color: var(--accent-soft); }
+
+        footer { text-align: center; padding: 20px; font-size: 0.8rem; color: #999; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header class="header-visual">
+        <h2>國考圓夢家</h2>
+        <h1>胖哆啦 / 佑安老師</h1>
+    </header>
+
+    <div class="story-section">
+        <span class="quote-main">「成績是門檻，但心安才是力量。」</span>
+        
+        <div class="tag-row">
+            <span>#專業輔導</span>
+            <span>#嘉義在地</span>
+            <span>#最強後盾</span>
+            <span>#備考戰友</span>
+        </div>
+
+        <p class="story-text">
+            很多人來找我時，第一句話都是：「我真的不太會念書。」<br>
+            但我看到的，是你們對未來的渴望，和一點點對現狀的疲憊。
+        </p>
+
+        <p class="highlight-name">我是胖哆啦/佑安老師。</p>
+
+        <p class="story-text">
+        在三民，我不只和你聊考科、聊成績，<br>
+        我更想陪你找回那份「敢試試看」的勇氣。<br><br>
+        
+讀不下去的時候，找我。<br>
+懷疑自己的時候，找我。<br>
+只要你還願意坐回書桌前，你就已經贏了昨天的自己。<br>
+
+        </p>
+    </div>
+
+
+
+    <div class="link-list">
+        <a href="https://page.line.me/uww2096a?openQrModal=true" class="btn btn-line">
+            <i class="fab fa-line"></i> 【LINE@一對一諮詢】接住你的備考焦慮
+        </a>
+        <a href="https://www.3people.com.tw/%E9%87%8D%E8%A6%81%E8%80%83%E8%A8%8A/%E4%B8%8A%E6%A6%9C%E5%BF%83%E5%BE%97/%E5%85%AC%E8%81%B7/%E4%B8%80%E8%88%AC%E8%AD%A6%E5%AF%9F/%E9%84%AD%E9%9B%85%E6%96%87.aspx" class="btn btn-success">
+            <i class="fas fa-user-graduate"></i> 【學長姐上榜心得】這條路，你也辦得到。
+        </a>
+        <a href="https://www.instagram.com/3people.chiayi/" class="btn btn-ig">
+            <i class="fab fa-instagram"></i> 【佑安老師真心話】讀不下去？來IG我有我陪你
+        </a>
+        <a href="https://www.threads.com/@3people.chiayi" class="btn btn-threads">
+            <i class="fa-brands fa-threads"></i> 【threads第一手情報】最速考試情報在這裡
+        </a>
+    </div>
+
+    <div class="footer-info">
+        <h3>我真的能考上嗎？來班免費諮詢</h3>
+        <div class="info-detail"><i class="fas fa-map-marker-alt"></i>嘉義市西區蘭井街465號4樓2</div>
+        <div class="info-detail"><i class="fas fa-phone"></i>(05) 320-9389</div>
+        <div class="info-detail"><i class="fas fa-clock"></i>週一至六 13:30-22:00 / 週日 09:00-18:00</div>
+    </div>
+
+    <footer>
+        © 2026 三民輔考嘉義班 - 佑安老師服務團隊
+    </footer>
+</div>
+
+</body>
+</html>
